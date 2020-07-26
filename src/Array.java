@@ -59,6 +59,14 @@ public class Array<E> {
         return data[index];
     }
 
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    public E getFirst() {
+        return get(0);
+    }
+
     // 修改index索引位置的元素为e
     public void set(int index, E e) {
         if (index < 0 || index >= size)
@@ -94,7 +102,7 @@ public class Array<E> {
         size--;
         data[size] = null;
 
-        if(size == data.length / 4 && data.length / 2 != 0)
+        if (size == data.length / 4 && data.length / 2 != 0)
             resize(data.length / 2);
         return ret;
     }
@@ -133,7 +141,7 @@ public class Array<E> {
 
     private void resize(int newCapacity) {
         E[] newData = (E[]) new Object[newCapacity];
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             newData[i] = data[i];
         }
         data = newData;
