@@ -1,5 +1,19 @@
 public class LinkedList<E> {
 
+    public void removeElement(E e) {
+        Node prev = dummyHead;
+        while (prev.next != null){
+            if(prev.next.e.equals(e))
+                break;
+            prev = prev.next;
+        }
+        if(prev.next != null){
+            Node delNode = prev.next;
+            prev.next = delNode.next;
+            delNode.next = null;
+        }
+    }
+
     private class Node {
         public E e;
         public Node next;

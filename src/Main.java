@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.ArrayList;
 
 public class Main {
     // 测试使用q运行opCount个enqueue和dequeue操作所需时间，单位：秒
@@ -30,8 +31,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+//          // 错误代码
+//        BST<E> bst;
+//        BST<Integer> nums = new BST<>();
+//        for (int num: nums)
+//            bst.add(num);
+//        bst.levelOrder();
+
 //        int opCount = 1000000;
-//
 //        ArrayStack<Integer> arrayStack = new ArrayStack<>();
 //        double time1 = testStack(arrayStack, opCount);
 //        System.out.println("ArrayStack, time: " + time1 + " s");
