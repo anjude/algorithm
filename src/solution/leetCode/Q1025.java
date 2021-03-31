@@ -1,4 +1,4 @@
-package Solution.LeetCode;
+package solution.leetCode;
 
 /**
  * Created by Anjude
