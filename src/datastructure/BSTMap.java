@@ -1,3 +1,4 @@
+package datastructure;
 public class BSTMap<K extends Comparable, V> implements Map<K, V> {
     private class Node {
         public K key;

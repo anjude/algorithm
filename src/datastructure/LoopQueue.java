@@ -1,3 +1,4 @@
+package datastructure;
 public class LoopQueue<E> implements Queue<E> {
 
     private E[] data;

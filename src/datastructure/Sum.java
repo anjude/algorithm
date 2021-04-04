@@ -1,3 +1,4 @@
+package datastructure;
 public class Sum {
     public static int sum(int[] arr) {
         return sum(arr, 0);

@@ -1,3 +1,4 @@
+package datastructure;
 public class ArrayStack<E> implements  Stack<E> {
     Array<E> array;
 

@@ -1,3 +1,4 @@
+package datastructure;
 public class LinkedList<E> {
 
     public void removeElement(E e) {

@@ -1,3 +1,4 @@
+package datastructure;
 public class LinkedListSet<E> implements Set<E> {
 
     private LinkedList<E> list;

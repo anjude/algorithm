@@ -1,3 +1,4 @@
+package datastructure;
 public interface Queue<E> {
 
     int getSize();

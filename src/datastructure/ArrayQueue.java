@@ -1,3 +1,4 @@
+package datastructure;
 public class ArrayQueue<E> implements Queue<E> {
 
     private Array<E> array;

@@ -1,3 +1,4 @@
+package datastructure;
 public interface Stack<E> {
 
     int getSize();

@@ -1,3 +1,4 @@
+package datastructure;
 public interface Map<K,V> {
 
     int getSize();

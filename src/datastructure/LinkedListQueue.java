@@ -1,3 +1,4 @@
+package datastructure;
 public class LinkedListQueue<E> implements Queue<E> {
 
     private class Node {
