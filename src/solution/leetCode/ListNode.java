@@ -5,13 +5,13 @@ package solution.leetCode;
  * Date: 2021/4/4 13:37
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode() {
+    public ListNode() {
     }
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
