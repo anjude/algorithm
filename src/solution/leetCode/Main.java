@@ -6,6 +6,10 @@ package solution.leetCode;
  */
 public class Main {
     public static void main(String[] args) {
+
+        Q76 a = new Q76();
+        System.out.println(a.minWindow("ADOBECODEBANC", "ABC"));
+
 //        ListNode L1 = new ListNode(1);
 //        L1.next = new ListNode(2);
 //        Q24 r = new Q24();
