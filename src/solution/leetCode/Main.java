@@ -1,14 +1,35 @@
 package solution.leetCode;
 
+import sun.reflect.generics.tree.Tree;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  * Created by Anjude
  * Date: 2021/3/31 13:34
  */
 public class Main {
     public static void main(String[] args) {
+        TreeNode treeNode = new TreeNode(1);
+        TreeNode root = treeNode;
+        for (int i = 2; i < 9; i++) {
+            if (i % 2 == 0) {
+                root.right = new TreeNode(i);
+            } else {
+                root.left = new TreeNode(i);
+                root = root.left;
+            }
+        }
 
-        Q76 a = new Q76();
-        System.out.println(a.minWindow("ADOBECODEBANC", "ABC"));
+        Q100 a = new Q100();
+        System.out.println(a.isSameTree(treeNode, treeNode));
+
+
+//        Q76 a = new Q76();
+//        System.out.println(a.minWindow("ADOBECODEBANC", "ABC"));
 
 //        ListNode L1 = new ListNode(1);
 //        L1.next = new ListNode(2);

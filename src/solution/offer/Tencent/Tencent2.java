@@ -1,8 +1,6 @@
-package solution.interview.Tencent;
+package solution.offer.Tencent;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by Anjude
@@ -34,6 +32,7 @@ public class Tencent2 {
             }
             i = 0;
         }
+        Collections.sort(nums);;
         System.out.println(n);
     }
 

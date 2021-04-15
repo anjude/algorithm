@@ -1,4 +1,4 @@
-package solution.interview.Tencent;
+package solution.offer.Tencent;
 
 public class Tencent1 {
     /**

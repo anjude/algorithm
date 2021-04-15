@@ -1,4 +1,5 @@
-package solution.interview;
+package solution.offer;
+
 
 /**
  * Created by Anjude
