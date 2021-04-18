@@ -1,8 +1,5 @@
 package solution.offer.ctrip;
 
-import sun.reflect.generics.tree.Tree;
-
-import javax.swing.tree.TreeNode;
 import java.util.*;
 
 /**
@@ -11,6 +8,8 @@ import java.util.*;
  */
 public class First {
 
+    public static String ret = "";
+
     /*请完成下面这个函数，实现题目要求的功能
     当然，你也可以不按照下面这个模板来作答，完全按照自己的想法来 ^-^
     ******************************开始写代码******************************/
@@ -18,21 +17,9 @@ public class First {
         if (n == null) {
             return "N";
         }
-        int times = Integer.valueOf(n);
+        int times = Integer.parseInt(n);
         if (times < 0 || times > 12) {
             return "0";
-        }
-        if (times == 1) {
-            return "R";
-        }
-        if (times == 2) {
-            return "GRR";
-        }
-        if (times == 3) {
-            return "GGRRGRR";
-        }
-        if (times == 5) {
-            return "GGRGGRRGGGRRGRRRGGRGGRRRGGRRGRR";
         }
         TreeNode head = new TreeNode("R");
         List<TreeNode> cur = new ArrayList<>();
@@ -50,27 +37,18 @@ public class First {
                 cur.add(left);
             }
         }
-
-        String ret = "R";
-        TreeNode k = toStringRet(head);
-        System.out.println(k.value);
-        return k.value;
+        toStringRet(head);
+        return ret;
     }
 
-    static TreeNode toStringRet(TreeNode head) {
+    static void toStringRet(TreeNode head) {
         if (head == null) {
-            return null;
+            return;
         }
+        toStringRet(head.left);
         System.out.println(head.value);
-        if (head.left != null) {
-            head.value = head.left.value + head.value;
-            head = toStringRet(head.left);
-        }
-        if (head.right != null) {
-            head.value = head.value + head.right.value;
-            head = toStringRet(head.right);
-        }
-        return head;
+        ret += head.value;
+        toStringRet(head.right);
     }
 
     /******************************结束写代码******************************/
