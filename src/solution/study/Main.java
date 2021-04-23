@@ -8,44 +8,37 @@ import java.util.Arrays;
  */
 public class Main {
 
-    public static int[] array = {345, 234, 13, 56, 45, 67, 32, 45, 63, 7, 6, 2, 4, 7, 9, 1, 3, 8, 5};
-
-    /**
-     * 递归排序
-     */
-    public static void sort(int[] arr, int begin, int end) {
-        if (begin >= end) {
-            return;
-        }
-        int key = arr[begin];
-        int i = begin;
-        int j = end;
-        while (i < j) {
-            while (i < j && arr[j] > key) {
-                j--;
-            }
-            if (i < j) {
-                arr[i] = arr[j];
-                arr[j] = key;
-                i++;
-            }
-            while (i < j && arr[i] < key) {
-                i++;
-            }
-            if (i < j) {
-                arr[j] = arr[i];
-                arr[i] = key;
-                j--;
-            }
-        }
-        sort(arr, begin, i - 1);
-        sort(arr, i + 1, end);
-    }
 
     public static void main(String[] args) {
-        sort(array, 0, array.length - 1);
-        for (Integer num : array) {
-            System.out.print(num + " ");
+        int n[] = {6, 5, 2, 7, 3, 9, 8, 4, 10, 1};
+        sort(n, 0, n.length - 1);
+        System.out.print("快排结果：");
+        for (int m : n) {
+            System.out.print(m + " ");
         }
+    }
+
+    static void sort(int[] arr, int l, int r) {
+        if (l > r) return;
+        int cur = arr[l];
+        int i = l;
+        int j = r;
+        while (i < j) {
+            while (arr[j] > cur) j--;
+            if (i < j) {
+                arr[i] = arr[j];
+                arr[j] = cur;
+                i++;
+            }
+            while (arr[i] < cur) i++;
+            if (i < j) {
+                arr[j] = arr[i];
+                arr[i] = cur;
+                j--;
+            }
+        }
+//        arr[i] = cur;
+        sort(arr, l, i - 1);
+        sort(arr, i + 1, r);
     }
 }

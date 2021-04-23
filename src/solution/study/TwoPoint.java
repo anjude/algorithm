@@ -12,6 +12,7 @@ public class TwoPoint {
         int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] ret = twoPoint(nums, 17);
         System.out.println(Arrays.toString(ret));
+        Math.max(1, 2);
     }
 
     private static int[] twoPoint(int[] nums, int target) {
