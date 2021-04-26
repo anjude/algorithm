@@ -1,4 +1,6 @@
-package solution.leetCode;
+package solution.leetCode.sortandother;
+
+import solution.leetCode.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

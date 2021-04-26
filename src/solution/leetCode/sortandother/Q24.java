@@ -1,6 +1,7 @@
-package solution.leetCode;
+package solution.leetCode.sortandother;
 
 import org.w3c.dom.NodeList;
+import solution.leetCode.ListNode;
 
 /**
  * Created by Anjude

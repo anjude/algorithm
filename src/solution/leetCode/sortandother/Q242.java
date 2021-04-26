@@ -1,4 +1,4 @@
-package solution.leetCode;
+package solution.leetCode.sortandother;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -5,7 +5,7 @@ package solution.leetCode;
  * Date: 2021/4/11 13:16
  */
 public class TreeNode {
-    int val;
+    public int val;
     public TreeNode left;
     public TreeNode right;
 

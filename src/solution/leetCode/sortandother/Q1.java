@@ -1,4 +1,4 @@
-package solution.leetCode;
+package solution.leetCode.sortandother;
 
 /**
  * Created by Anjude
