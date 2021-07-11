@@ -13,7 +13,7 @@ import java.util.Map;
  * @date 2021/7/5 23:34
  */
 public class JZ7 {
-    private Map<Integer, Integer> indexMap;
+    private Map<Integer, Integer> indexMap = new HashMap<>();
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         int n = preorder.length;
